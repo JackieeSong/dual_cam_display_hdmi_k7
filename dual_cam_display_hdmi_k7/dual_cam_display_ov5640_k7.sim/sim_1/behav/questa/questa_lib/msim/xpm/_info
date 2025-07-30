@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.sim/sim_1/behav/questa
+Pvcomponents
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+w1544171246
+R0
+8D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd
+FD:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd
+l0
+L11
+VzL8J5J_[OnLI0e>i6NDnI0
+!s100 ;>SEeaBPYBj8[m7>ack7Q3
+OL;C;10.4e;61
+31
+!s110 1695093769
+!i10b 1
+!s108 1695093768.000000
+!s90 -64|-93|-work|xpm|D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd|
+!s107 D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd|
+!i113 0
+o-93 -work xpm
+tExplicit 1

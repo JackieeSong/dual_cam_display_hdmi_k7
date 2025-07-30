@@ -1,0 +1,548 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun  4 11:30:08 2022
+| Host         : DESKTOP-5V6VM4C running 64-bit major release  (build 9200)
+| Command      : report_methodology -file dual_cam_display_methodology_drc_routed.rpt -pb dual_cam_display_methodology_drc_routed.pb -rpx dual_cam_display_methodology_drc_routed.rpx
+| Design       : dual_cam_display
+| Device       : xc7k325tffg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 100
++-----------+----------+----------------------------------------------------+------------+
+| Rule      | Severity | Description                                        | Violations |
++-----------+----------+----------------------------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert                       | 1          |
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain    | 16         |
+| SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal         | 1          |
+| TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree | 1          |
+| TIMING-6  | Warning  | No common primary clock between related clocks     | 4          |
+| TIMING-7  | Warning  | No common node between related clocks              | 4          |
+| TIMING-16 | Warning  | Large setup violation                              | 13         |
+| TIMING-18 | Warning  | Missing input or output delay                      | 24         |
+| TIMING-27 | Warning  | Invalid primary clock on hierarchical pin          | 1          |
+| XDCB-5    | Warning  | Runtime inefficient way to find pin objects        | 3          |
+| REQP-1959 | Advisory | connects_SERDES_RST_driver_not_FF                  | 32         |
++-----------+----------+----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/rstdiv2_sync_r[11]_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r1_reg/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[0]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[10]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[11]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[1]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[2]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[3]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[4]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[5]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[6]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[7]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[8]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rst_sync_r_reg[9]/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep/PRE, inst_memory_control/mig_inst/u_ddr3_mig/u_ddr3_infrastructure/rstdiv0_sync_r1_reg_rep__0/PRE (the first 15 of 57 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_display_control/frame_read_m0/read_buf/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X99Y1 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell inst_display_control/frame_read_m0/read_buf/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#2 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_display_control/frame_read_m1/read_buf/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X103Y6 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell inst_display_control/frame_read_m1/read_buf/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#3 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_image_capture/channel1_capture/frame_write_m0/write_buf/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X149Y0 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell inst_image_capture/channel1_capture/frame_write_m0/write_buf/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#4 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_image_capture/channel2_capture/frame_write_m0/write_buf/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X151Y1 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell inst_image_capture/channel2_capture/frame_write_m0/write_buf/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#5 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[0] in site SLICE_X73Y136 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[0] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#6 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[10] in site SLICE_X70Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[10] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#7 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[11] in site SLICE_X71Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[11] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#8 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[1] in site SLICE_X69Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[1] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#9 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[2] in site SLICE_X72Y134 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[2] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#10 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[3] in site SLICE_X76Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[3] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#11 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[4] in site SLICE_X74Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[4] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#12 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[5] in site SLICE_X74Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[5] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#13 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[6] in site SLICE_X74Y137 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[6] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#14 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[7] in site SLICE_X73Y133 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[7] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#15 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[8] in site SLICE_X75Y135 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[8] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+PDRC-190#16 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_sync_r5_reg[9] in site SLICE_X72Y136 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell inst_memory_control/mig_inst/u_ddr3_mig/temp_mon_enabled.u_tempmon/device_temp_r_reg[9] is not placed in the same (SLICE) site.
+Related violations: <none>
+
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/ddr_phy_prbs_rdlvl_gen.u_ddr_phy_prbs_rdlvl/dec_cnt_reg, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+TIMING-4#1 Warning
+Invalid primary clock redefinition on a clock tree  
+Invalid clock redefinition on a clock tree. The primary clock inst_clocks/clk_ref_m0/inst/clk_in1 is defined downstream of clock sys_clk and overrides its insertion delay and/or waveform definition
+Related violations: <none>
+
+TIMING-6#1 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and cmos1_pclk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks cmos1_pclk]
+Related violations: <none>
+
+TIMING-6#2 Warning
+No common primary clock between related clocks  
+The clocks clk_pll_i and cmos2_pclk are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks cmos2_pclk]
+Related violations: <none>
+
+TIMING-6#3 Warning
+No common primary clock between related clocks  
+The clocks cmos1_pclk and clk_pll_i are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks cmos1_pclk] -to [get_clocks clk_pll_i]
+Related violations: <none>
+
+TIMING-6#4 Warning
+No common primary clock between related clocks  
+The clocks cmos2_pclk and clk_pll_i are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks cmos2_pclk] -to [get_clocks clk_pll_i]
+Related violations: <none>
+
+TIMING-7#1 Warning
+No common node between related clocks  
+The clocks clk_pll_i and cmos1_pclk are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks cmos1_pclk]
+Related violations: <none>
+
+TIMING-7#2 Warning
+No common node between related clocks  
+The clocks clk_pll_i and cmos2_pclk are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_pll_i] -to [get_clocks cmos2_pclk]
+Related violations: <none>
+
+TIMING-7#3 Warning
+No common node between related clocks  
+The clocks cmos1_pclk and clk_pll_i are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks cmos1_pclk] -to [get_clocks clk_pll_i]
+Related violations: <none>
+
+TIMING-7#4 Warning
+No common node between related clocks  
+The clocks cmos2_pclk and clk_pll_i are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks cmos2_pclk] -to [get_clocks clk_pll_i]
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -1.398 ns between inst_display_control/frame_read_m0/frame_fifo_read_m0/fifo_aclr_reg/C (clocked by clk_pll_i) and inst_display_control/video_rect_read_data_m0/read_req_reg/D (clocked by clk_out3_clk_200M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -1.401 ns between inst_image_capture/channel2_capture/cmos_write_req_gen_m0/write_req_reg/C (clocked by cmos2_pclk) and inst_image_capture/channel2_capture/frame_write_m0/frame_fifo_write_m0/write_req_syn_inst/data_sync_reg0/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -1.420 ns between inst_image_capture/channel2_capture/cmos_write_req_gen_m0/write_addr_index_reg[1]/C (clocked by cmos2_pclk) and inst_image_capture/channel2_capture/frame_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[1]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -1.438 ns between inst_image_capture/channel2_capture/cmos_write_req_gen_m0/write_addr_index_reg[0]/C (clocked by cmos2_pclk) and inst_image_capture/channel2_capture/frame_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[0]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -1.443 ns between inst_image_capture/channel2_capture/cmos_write_req_gen_m0/read_addr_index_reg[0]/C (clocked by cmos2_pclk) and inst_display_control/frame_read_m1/frame_fifo_read_m0/read_addr_index_d0_reg[0]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -1.448 ns between inst_image_capture/channel2_capture/cmos_write_req_gen_m0/read_addr_index_reg[1]/C (clocked by cmos2_pclk) and inst_display_control/frame_read_m1/frame_fifo_read_m0/read_addr_index_d0_reg[1]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -1.448 ns between inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_calib_top/init_calib_complete_reg/C (clocked by clk_pll_i) and inst_top_resets/init_calib_complete_syn_inst1/data_sync_reg0/D (clocked by clk_out3_clk_200M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -1.451 ns between inst_display_control/frame_read_m1/frame_fifo_read_m0/fifo_aclr_reg/C (clocked by clk_pll_i) and inst_display_control/video_rect_read_data_m1/read_req_reg/D (clocked by clk_out3_clk_200M). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -1.573 ns between inst_image_capture/channel1_capture/cmos_write_req_gen_m0/read_addr_index_reg[1]/C (clocked by cmos1_pclk) and inst_display_control/frame_read_m0/frame_fifo_read_m0/read_addr_index_d0_reg[1]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -1.610 ns between inst_image_capture/channel1_capture/cmos_write_req_gen_m0/read_addr_index_reg[0]/C (clocked by cmos1_pclk) and inst_display_control/frame_read_m0/frame_fifo_read_m0/read_addr_index_d0_reg[0]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -1.617 ns between inst_image_capture/channel1_capture/cmos_write_req_gen_m0/write_addr_index_reg[0]/C (clocked by cmos1_pclk) and inst_image_capture/channel1_capture/frame_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[0]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -1.672 ns between inst_image_capture/channel1_capture/cmos_write_req_gen_m0/write_addr_index_reg[1]/C (clocked by cmos1_pclk) and inst_image_capture/channel1_capture/frame_write_m0/frame_fifo_write_m0/write_addr_index_d0_reg[1]/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -1.673 ns between inst_image_capture/channel1_capture/cmos_write_req_gen_m0/write_req_reg/C (clocked by cmos1_pclk) and inst_image_capture/channel1_capture/frame_write_m0/frame_fifo_write_m0/write_req_syn_inst/data_sync_reg0/D (clocked by clk_pll_i). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_db[0] relative to clock(s) cmos1_pclk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_db[1] relative to clock(s) cmos1_pclk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_db[2] relative to clock(s) cmos1_pclk
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_db[3] relative to clock(s) cmos1_pclk
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_db[4] relative to clock(s) cmos1_pclk
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_db[5] relative to clock(s) cmos1_pclk
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_db[6] relative to clock(s) cmos1_pclk
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_db[7] relative to clock(s) cmos1_pclk
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_href relative to clock(s) cmos1_pclk
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_scl relative to clock(s) inst_clocks/clk_ref_m0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_sda relative to clock(s) inst_clocks/clk_ref_m0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on cmos1_vsync relative to clock(s) cmos1_pclk
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_db[0] relative to clock(s) cmos2_pclk
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_db[1] relative to clock(s) cmos2_pclk
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_db[2] relative to clock(s) cmos2_pclk
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_db[3] relative to clock(s) cmos2_pclk
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_db[4] relative to clock(s) cmos2_pclk
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_db[5] relative to clock(s) cmos2_pclk
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_db[6] relative to clock(s) cmos2_pclk
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_db[7] relative to clock(s) cmos2_pclk
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_href relative to clock(s) cmos2_pclk
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_scl relative to clock(s) inst_clocks/clk_ref_m0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_sda relative to clock(s) inst_clocks/clk_ref_m0/inst/clk_in1
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An input delay is missing on cmos2_vsync relative to clock(s) cmos2_pclk
+Related violations: <none>
+
+TIMING-27#1 Warning
+Invalid primary clock on hierarchical pin  
+A primary clock inst_clocks/clk_ref_m0/inst/clk_in1 is created on an inappropriate internal pin inst_clocks/clk_ref_m0/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+XDCB-5#1 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '16' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: E:/education/no12/week12/dual_cam_display_ov5640_k7/dual_cam_display_ov5640_k7.srcs/constrs_1/imports/new/dual_ov5640_an5642_hdmi.xdc (Line: 42)
+Related violations: <none>
+
+XDCB-5#2 Warning
+Runtime inefficient way to find pin objects  
+The option '-through : [get_pins -filter {NAME =~ *SyncAsync*/oSyncStages_reg[0]/D} -hier]' of constraint 'set_false_path' uses inefficient query to find pin objects (see constraint position '4' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/education/no12/week12/dual_cam_display_ov5640_k7/dual_cam_display_ov5640_k7.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc (Line: 5)
+Related violations: <none>
+
+XDCB-5#3 Warning
+Runtime inefficient way to find pin objects  
+The option '-to : [get_pins -hier -include_replicated_objects -filter {NAME =~ *temp_mon_enabled.u_tempmon/device_temp_sync_r1_reg[*]/D}]' of constraint 'set_max_delay' uses inefficient query to find pin objects (see constraint position '10' in the Timing Constraint window in Vivado IDE). To reduce runtime, it is recommended to get the pins through the cell objects. Please refer to Using Constraints Guide (Constraints Efficiency). An example of optimal query is: get_pins -filter {REF_PIN_NAME=~yy*} -of_objects [get_cells -hierarchical xx*].
+Current XDC: e:/education/no12/week12/dual_cam_display_ov5640_k7/dual_cam_display_ov5640_k7.srcs/sources_1/ip/ddr3/ddr3/user_design/constraints/ddr3.xdc (Line: 537)
+Related violations: <none>
+
+REQP-1959#1 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[0].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#2 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#3 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#4 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#5 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#6 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#7 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#8 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/ddr_byte_group_io/input_[9].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#9 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/ddr_byte_group_io/input_[1].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#10 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#11 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#12 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#13 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#14 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#15 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#16 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/ddr_byte_group_io/input_[9].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#17 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#18 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#19 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#20 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#21 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#22 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#23 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#24 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/ddr_byte_group_io/input_[9].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#25 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[2].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#26 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[3].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#27 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[4].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#28 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[5].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#29 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[6].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#30 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[7].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#31 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[8].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+REQP-1959#32 Advisory
+connects_SERDES_RST_driver_not_FF  
+inst_memory_control/mig_inst/u_ddr3_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/ddr_byte_group_io/input_[9].iserdes_dq_.iserdesdq: The RST pin should only be driven by a Flip-flop.
+Related violations: <none>
+
+

@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg676-2" LaunchTime="1693031050">
+  <File Type="PA-TCL" Name="dual_cam_display.tcl"/>
+  <File Type="REPORTS-TCL" Name="dual_cam_display_reports.tcl"/>
+  <File Type="RDS-RDS" Name="dual_cam_display.vds"/>
+  <File Type="RDS-UTIL" Name="dual_cam_display_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="dual_cam_display_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="dual_cam_display.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/afifo_64i_16o_128/afifo_64i_16o_128.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/ip/afifo_64i_16o_128/afifo_64i_16o_128.xci"/>
+        <Attr Name="ImportTime" Val="1653357634"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/afifo_16i_64o_512/afifo_16i_64o_512.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/ip/afifo_16i_64o_512/afifo_16i_64o_512.xci"/>
+        <Attr Name="ImportTime" Val="1653279380"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/AXI_MASTER.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/imports/new/AXI_MASTER.v"/>
+        <Attr Name="ImportTime" Val="1642602925"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/CMOS_CONFIG/CMOS_OV5640RST.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/imports/CMOS_CONFIG/CMOS_OV5640RST.v"/>
+        <Attr Name="ImportTime" Val="1641777474"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/channel_capture.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/new/channel_capture.v"/>
+        <Attr Name="ImportTime" Val="1653363306"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clocks.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/new/clocks.v"/>
+        <Attr Name="ImportTime" Val="1653362890"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/cmos_8_16bit.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/cmos_8_16bit.v"/>
+        <Attr Name="ImportTime" Val="1653363323"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/cmos_write_req_gen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/cmos_write_req_gen.v"/>
+        <Attr Name="ImportTime" Val="1653363355"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/video_define.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/video_define.v"/>
+        <Attr Name="ImportTime" Val="1505375820"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/color_bar.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/color_bar.v"/>
+        <Attr Name="ImportTime" Val="1653363219"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/display_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../final/dual_cam_display/dual_cam_display.srcs/sources_1/new/display_control.v"/>
+        <Attr Name="ImportTime" Val="1653384418"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/compare/frame_fifo_read_state.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/imports/compare/frame_fifo_read_state.v"/>
+        <Attr Name="ImportTime" Val="1653302491"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/compare/frame_fifo_write_state.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/imports/compare/frame_fifo_write_state.v"/>
+        <Attr Name="ImportTime" Val="1653303214"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/frame_read.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/new/frame_read.v"/>
+        <Attr Name="ImportTime" Val="1653374181"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/frame_write.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/new/frame_write.v"/>
+        <Attr Name="ImportTime" Val="1653378913"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/compare/i2c_config_state.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/i2c_config_state.v"/>
+        <Attr Name="ImportTime" Val="1651742223"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/i2c_master/timescale.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/CMOS_SXKJ2/SOURCE_CODE/i2c_master/timescale.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/i2c_master/i2c_master_defines.v">
+      <FileInfo SFType="VHeader">
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/CMOS_SXKJ2/SOURCE_CODE/i2c_master/i2c_master_defines.v"/>
+        <Attr Name="ImportTime" Val="1500957176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/i2c_master/i2c_master_bit_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/CMOS_SXKJ2/SOURCE_CODE/i2c_master/i2c_master_bit_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1618207798"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/i2c_master/i2c_master_byte_ctrl.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/CMOS_SXKJ2/SOURCE_CODE/i2c_master/i2c_master_byte_ctrl.v"/>
+        <Attr Name="ImportTime" Val="1572536482"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/i2c_master/i2c_master_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/CMOS_SXKJ2/SOURCE_CODE/i2c_master/i2c_master_top.v"/>
+        <Attr Name="ImportTime" Val="1618208666"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/image_capture.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/new/image_capture.v"/>
+        <Attr Name="ImportTime" Val="1653363229"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/lut_ov5640_rgb565_640_480.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/lut_ov5640_rgb565_640_480.v"/>
+        <Attr Name="ImportTime" Val="1505377621"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/mem_read_arbi.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/mem_read_arbi.v"/>
+        <Attr Name="ImportTime" Val="1653363154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/mem_write_arbi.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/mem_write_arbi.v"/>
+        <Attr Name="ImportTime" Val="1653363120"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/memory_control.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../final/dual_cam_display/dual_cam_display.srcs/sources_1/new/memory_control.v"/>
+        <Attr Name="ImportTime" Val="1653437437"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/syn_block.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/new/syn_block.v"/>
+        <Attr Name="ImportTime" Val="1653286142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/timing_gen_xy.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/timing_gen_xy.v"/>
+        <Attr Name="ImportTime" Val="1653363172"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/top_resets.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/new/top_resets.v"/>
+        <Attr Name="ImportTime" Val="1653362901"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/video_rect_read_data.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/video_rect_read_data.v"/>
+        <Attr Name="ImportTime" Val="1653363014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dual_cam_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../final/dual_cam_display/dual_cam_display.srcs/sources_1/new/dual_cam_display.v"/>
+        <Attr Name="ImportTime" Val="1653437790"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/afifo_16i_64o_512.xcix">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/ip/afifo_16i_64o_512.xcix"/>
+        <Attr Name="ImportTime" Val="1653279450"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/ip/ddr3/mig_b.prj">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/sources_1/ip/ddr3/mig_b.prj"/>
+        <Attr Name="ImportTime" Val="1653374724"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="ddr3"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ddr3/mig_a.prj">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/project_1.srcs/sources_1/ip/ddr3/mig_a.prj"/>
+        <Attr Name="ImportTime" Val="1653454822"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="ddr3"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="dual_cam_display"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/new/dual_ov5640_an5642_hdmi.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../compare/week14_sunshaobin/dual_ov5640_an5642_hdmi3/dual_ov5640_an5642_hdmi.srcs/constrs_1/new/dual_ov5640_an5642_hdmi.xdc"/>
+        <Attr Name="ImportTime" Val="1653370743"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/dual_cam_display_timming.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/new/dual_ov5640_an5642_hdmi.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_200M"/>
+  <BlockFileSet Type="BlockSrcs" Name="rgb2dvi_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ddr3"/>
+</GenRun>

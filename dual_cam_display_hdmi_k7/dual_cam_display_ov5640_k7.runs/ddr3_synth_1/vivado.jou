@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Oct 23 13:21:32 2023
+# Process ID: 18920
+# Current directory: D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.runs/ddr3_synth_1
+# Command line: vivado.exe -log ddr3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ddr3.tcl
+# Log file: D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.runs/ddr3_synth_1/ddr3.vds
+# Journal file: D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.runs/ddr3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source ddr3.tcl -notrace

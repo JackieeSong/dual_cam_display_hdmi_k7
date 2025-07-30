@@ -1,0 +1,79 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun  4 11:11:47 2022
+| Host         : DESKTOP-5V6VM4C running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'afifo_64i_16o_128'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of afifo_64i_16o_128 (xilinx.com:ip:fifo_generator:13.2) from (Rev. 5) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun  4 10:45:39 2022
+| Host         : DESKTOP-5V6VM4C running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ddr3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ddr3 (xilinx.com:ip:mig_7series:4.2) from (Rev. 1)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun  4 10:44:59 2022
+| Host         : DESKTOP-5V6VM4C running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'afifo_16i_64o_512'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of afifo_16i_64o_512 (xilinx.com:ip:fifo_generator:13.2) from (Rev. 5) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun  4 10:44:32 2022
+| Host         : DESKTOP-5V6VM4C running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'clk_200M'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of clk_200M (xilinx.com:ip:clk_wiz:6.0) from (Rev. 4) to (Rev. 2)
+

@@ -1,0 +1,90 @@
+# do {I2C_sim_tb_elaborate.do}
+# ** Error: QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 11:22:56 on Sep 19,2023
+# vopt "+acc=npr" -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.I2C_sim_tb xil_defaultlib.glbl -o I2C_sim_tb_opt 
+# 
+# Top level modules:
+# 	I2C_sim_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading module I2C_sim_tb
+# ** Error (suppressible): (vopt-19) Failed to access library 'C:/Xilinx/vivado_sim_lib/unisims_ver' at "C:/Xilinx/vivado_sim_lib/unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Warning: ../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# 
+# ** Error (suppressible): (vopt-19) Failed to access library 'C:/Xilinx/vivado_sim_lib/unimacro_ver' at "C:/Xilinx/vivado_sim_lib/unimacro_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Warning: ../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# 
+# ** Error (suppressible): (vopt-19) Failed to access library 'C:/Xilinx/vivado_sim_lib/secureip' at "C:/Xilinx/vivado_sim_lib/secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Warning: ../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v(1): (vopt-2669) Unable to find library 'secureip'.
+# 
+# ** Error: ../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v(31): Module 'I2C_sim' is not defined.
+# -- Loading module glbl
+# Optimization failed
+# End time: 11:22:56 on Sep 19,2023, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 3
+# child process exited abnormally
+# Error in macro ./I2C_sim_tb_elaborate.do line 9
+# QuestaSim-64 vopt 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 11:22:56 on Sep 19,2023
+# vopt "+acc=npr" -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.I2C_sim_tb xil_defaultlib.glbl -o I2C_sim_tb_opt 
+# 
+# Top level modules:
+# 	I2C_sim_tb
+# 	glbl
+# 
+# Analyzing design...
+# -- Loading module I2C_sim_tb
+# ** Error (suppressible): (vopt-19) Failed to access library 'C:/Xilinx/vivado_sim_lib/unisims_ver' at "C:/Xilinx/vivado_sim_lib/unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unisims_ver' at "unisims_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Warning: ../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v(1): (vopt-2669) Unable to find library 'unisims_ver'.
+# 
+# ** Error (suppressible): (vopt-19) Failed to access library 'C:/Xilinx/vivado_sim_lib/unimacro_ver' at "C:/Xilinx/vivado_sim_lib/unimacro_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'unimacro_ver' at "unimacro_ver".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Warning: ../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v(1): (vopt-2669) Unable to find library 'unimacro_ver'.
+# 
+# ** Error (suppressible): (vopt-19) Failed to access library 'C:/Xilinx/vivado_sim_lib/secureip' at "C:/Xilinx/vivado_sim_lib/secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'secureip' at "secureip".
+# 
+# No such file or directory. (errno = ENOENT)
+# ** Warning: ../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v(1): (vopt-2669) Unable to find library 'secureip'.
+# 
+# ** Error: ../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v(31): Module 'I2C_sim' is not defined.
+# -- Loading module glbl
+# Optimization failed
+# End time: 11:22:56 on Sep 19,2023, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 3
+# child process exited abnormally
+#     while executing
+# "exec <nul: {D:\questasim64_10.4e\win64\vopt.EXE} -64 +acc=npr -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib..."
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 exec $redir $new [lrange $args 1 end]"
+#     (procedure "::unknown" line 47)
+#     invoked from within
+# "D:\\questasim64_10.4e\\win64\\vopt -64 +acc=npr -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultli..."

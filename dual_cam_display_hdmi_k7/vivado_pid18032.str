@@ -1,0 +1,582 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 18032
+License: Customer
+
+Current time: 	Fri Jan 05 16:19:17 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 2
+Available disk space: 11 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	JackieSong
+User home directory: C:/Users/81452
+User working directory: D:/FPGA/week13/7.29/project/dual_cam_display
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.3
+RDI_DATADIR: D:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/81452/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/81452/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/81452/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/FPGA/week13/7.29/project/dual_cam_display/vivado.log
+Vivado journal file location: 	D:/FPGA/week13/7.29/project/dual_cam_display/vivado.jou
+Engine tmp dir: 	D:/FPGA/week13/7.29/project/dual_cam_display/.Xil/Vivado-18032-LAPTOP-HUGRUEV8
+
+Xilinx Environment Variables
+----------------------------
+CUDA_SDK_BIN_PATH: C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.6\bin\win64
+CUDA_SDK_LIB_PATH: C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.6\common\lib\x64
+CUDA_SDK_PATH: C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.6
+XILINX: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.3
+XILINX_SDK: D:/Xilinx/SDK/2018.3
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 665 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 96 MB (+97832kb) [00:00:07]
+// [Engine Memory]: 588 MB (+465140kb) [00:00:07]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\FPGA\week13\7.29\project\dual_cam_display\dual_cam_display_ov5640_k7.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 670 MB. GUI used memory: 46 MB. Current time: 1/5/24, 4:19:19 PM CST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 795 MB (+185858kb) [00:00:21]
+// [GUI Memory]: 119 MB (+19229kb) [00:00:24]
+// WARNING: HEventQueue.dispatchEvent() is taking  6908 ms.
+// Tcl Message: open_project D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/FPGA/week13/7.29/project/dual_cam_display/usr_IP'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 824 MB. GUI used memory: 58 MB. Current time: 1/5/24, 4:19:36 PM CST
+// [Engine Memory]: 835 MB (+405kb) [00:00:28]
+// WARNING: HEventQueue.dispatchEvent() is taking  2008 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1214 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1231 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:20 . Memory (MB): peak = 842.996 ; gain = 210.875 
+// Project name: dual_cam_display_ov5640_k7; location: D:/FPGA/week13/7.29/project/dual_cam_display; part: xc7k325tffg676-2
+// [Engine Memory]: 1,090 MB (+223318kb) [00:00:33]
+dismissDialog("Open Project"); // bx (cp)
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 1,157 MB (+13539kb) [00:00:34]
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 453 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v)]", 2); // B (D, cp)
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 3); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 3); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 4); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 5); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v)]", 6); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8); // B (D, cp)
+// PAPropertyPanels.initPanels (i2c_config_state.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/compare/i2c_config_state.v":14'
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 9, false); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_top.v":11'
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v), bit_controller : i2c_master_bit_ctrl (i2c_master_bit_ctrl.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v), bit_controller : i2c_master_bit_ctrl (i2c_master_bit_ctrl.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v), bit_controller : i2c_master_bit_ctrl (i2c_master_bit_ctrl.v)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_bit_ctrl.v":143'
+// Elapsed time: 649 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/CMOS_CONFIG/CMOS_OV5640RST.v":23'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/CMOS_CONFIG/CMOS_OV5640RST.v":23'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/compare/i2c_config_state.v":14'
+// Elapsed time: 62 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/lut_ov5640_rgb565_640_480.v":3'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,180 MB. GUI used memory: 65 MB. Current time: 1/5/24, 4:43:45 PM CST
+// Elapsed time: 512 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), cmos_8_16bit_m0 : cmos_8_16bit (cmos_8_16bit.v)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 8, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/compare/i2c_config_state.v":14'
+// Elapsed time: 72 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_top.v":11'
+// Elapsed time: 24 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v)]", 10, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_byte_ctrl.v":75'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,180 MB. GUI used memory: 62 MB. Current time: 1/5/24, 5:13:45 PM CST
+// Elapsed time: 3045 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v)]", 2, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/new/dual_cam_display.v":13'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 42 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v)]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 3, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 3, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/clocks.v":13'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 4, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 5, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/top_resets.v":14'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst : syn_block (syn_block.v)]", 6, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst : syn_block (syn_block.v)]", 6, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst : syn_block (syn_block.v)]", 7, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst : syn_block (syn_block.v)]", 7, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst1 : syn_block (syn_block.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst1 : syn_block (syn_block.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst1 : syn_block (syn_block.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst1 : syn_block (syn_block.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/image_capture.v":23'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 6); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v)]", 7, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/channel_capture.v":14'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/CMOS_CONFIG/CMOS_OV5640RST.v":23'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 9, true); // B (D, cp) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,180 MB. GUI used memory: 61 MB. Current time: 1/5/24, 5:43:45 PM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/compare/i2c_config_state.v":14'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 10, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_top.v":11'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 10, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 10); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 9, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 9, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/compare/i2c_config_state.v":2'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 10, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_top.v":1'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 10); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v)]", 11, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v)]", 11, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_byte_ctrl.v":75'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v)]", 11); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 13, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 13, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/lut_ov5640_rgb565_640_480.v":3'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), cmos_8_16bit_m0 : cmos_8_16bit (cmos_8_16bit.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), cmos_8_16bit_m0 : cmos_8_16bit (cmos_8_16bit.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/cmos_8_16bit.v":12'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), cmos_write_req_gen_m0 : cmos_write_req_gen (cmos_write_req_gen.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), cmos_write_req_gen_m0 : cmos_write_req_gen (cmos_write_req_gen.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/cmos_write_req_gen.v":12'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 16); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 16, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 16, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/frame_write.v":13'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 16); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v)]", 18, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v)]", 18, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/compare/frame_fifo_write_state.v":14'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v), write_req_syn_inst : syn_block (syn_block.v)]", 19, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v), write_req_syn_inst : syn_block (syn_block.v)]", 19, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v)]", 20); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v)]", 20, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v)]", 20, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/channel_capture.v":3'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v)]", 20); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 21, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 21, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/CMOS_CONFIG/CMOS_OV5640RST.v":4'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 22); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 22, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 22, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/compare/i2c_config_state.v":2'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 22); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 23, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 23, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_top.v":1'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 23); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v)]", 24, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v)]", 24, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_byte_ctrl.v":75'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v)]", 24); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v), bit_controller : i2c_master_bit_ctrl (i2c_master_bit_ctrl.v)]", 25, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v), bit_controller : i2c_master_bit_ctrl (i2c_master_bit_ctrl.v)]", 25, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_bit_ctrl.v":143'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 26, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 26, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/lut_ov5640_rgb565_640_480.v":3'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), cmos_8_16bit_m0 : cmos_8_16bit (cmos_8_16bit.v)]", 27, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), cmos_8_16bit_m0 : cmos_8_16bit (cmos_8_16bit.v)]", 27, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/cmos_8_16bit.v":1'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), mem_write_arbi_m0 : mem_write_arbi (mem_write_arbi.v)]", 30, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), mem_write_arbi_m0 : mem_write_arbi (mem_write_arbi.v)]", 30, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/mem_write_arbi.v":11'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 29); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v)]", 31, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v)]", 31); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v)]", 31, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v)]", 31, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/compare/frame_fifo_write_state.v":2'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v)]", 33); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v)]", 33, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v)]", 33, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/new/memory_control.v":23'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v)]", 33); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v), u_aq_axi_master : AXI_MASTER (AXI_MASTER.v)]", 34, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v), u_aq_axi_master : AXI_MASTER (AXI_MASTER.v)]", 34, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/new/AXI_MASTER.v":13'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v)]", 36); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v)]", 36, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v)]", 36, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/new/display_control.v":23'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v)]", 36); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), color_bar_m0 : color_bar (color_bar.v)]", 37, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), color_bar_m0 : color_bar (color_bar.v)]", 37, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/color_bar.v":12'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v)]", 38); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v)]", 38, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v)]", 38, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/video_rect_read_data.v":12'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v)]", 38); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v), timing_gen_xy_m0 : timing_gen_xy (timing_gen_xy.v)]", 39, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v), timing_gen_xy_m0 : timing_gen_xy (timing_gen_xy.v)]", 39, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/timing_gen_xy.v":11'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m1 : video_rect_read_data (video_rect_read_data.v)]", 40); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m1 : video_rect_read_data (video_rect_read_data.v)]", 40, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m1 : video_rect_read_data (video_rect_read_data.v)]", 40, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/video_rect_read_data.v":1'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m1 : video_rect_read_data (video_rect_read_data.v)]", 40); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m1 : video_rect_read_data (video_rect_read_data.v), timing_gen_xy_m0 : timing_gen_xy (timing_gen_xy.v)]", 41, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m1 : video_rect_read_data (video_rect_read_data.v), timing_gen_xy_m0 : timing_gen_xy (timing_gen_xy.v)]", 41, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/timing_gen_xy.v":1'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m0 : frame_read (frame_read.v)]", 42); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m0 : frame_read (frame_read.v)]", 42, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m0 : frame_read (frame_read.v)]", 42, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/frame_read.v":23'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m0 : frame_read (frame_read.v)]", 42); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m0 : frame_read (frame_read.v), frame_fifo_read_m0 : frame_fifo_read_state (frame_fifo_read_state.v)]", 44, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m0 : frame_read (frame_read.v), frame_fifo_read_m0 : frame_fifo_read_state (frame_fifo_read_state.v)]", 44, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/compare/frame_fifo_read_state.v":14'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m0 : frame_read (frame_read.v), frame_fifo_read_m0 : frame_fifo_read_state (frame_fifo_read_state.v), write_req_syn_inst : syn_block (syn_block.v)]", 45, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m0 : frame_read (frame_read.v), frame_fifo_read_m0 : frame_fifo_read_state (frame_fifo_read_state.v), write_req_syn_inst : syn_block (syn_block.v)]", 45, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m1 : frame_read (frame_read.v)]", 46); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m1 : frame_read (frame_read.v)]", 46, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m1 : frame_read (frame_read.v)]", 46, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/frame_read.v":21'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m1 : frame_read (frame_read.v)]", 46); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m1 : frame_read (frame_read.v), frame_fifo_read_m0 : frame_fifo_read_state (frame_fifo_read_state.v)]", 48, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m1 : frame_read (frame_read.v), frame_fifo_read_m0 : frame_fifo_read_state (frame_fifo_read_state.v)]", 48, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/compare/frame_fifo_read_state.v":2'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), mem_read_arbi_m0 : mem_read_arbi (mem_read_arbi.v)]", 50, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), mem_read_arbi_m0 : mem_read_arbi (mem_read_arbi.v)]", 50, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/mem_read_arbi.v":2'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Configuration Files]", 52); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 56); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1]", 57); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v)]", 2, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/new/dual_cam_display.v":3'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, timescale.v]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, timescale.v]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/timescale.v":0'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, i2c_master_defines.v]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, i2c_master_defines.v]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_defines.v":0'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, video_define.v]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, video_define.v]", 4, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/video_define.v":0'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v)]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/clocks.v":3'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 7, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/top_resets.v":3'
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 7); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst : syn_block (syn_block.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst : syn_block (syn_block.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst : syn_block (syn_block.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst : syn_block (syn_block.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst1 : syn_block (syn_block.v)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst1 : syn_block (syn_block.v)]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst1 : syn_block (syn_block.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst1 : syn_block (syn_block.v)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 12, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/image_capture.v":3'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 12); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v)]", 13, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v)]", 13, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/channel_capture.v":3'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v)]", 14, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v)]", 14, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/channel_capture.v":3'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), mem_write_arbi_m0 : mem_write_arbi (mem_write_arbi.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), mem_write_arbi_m0 : mem_write_arbi (mem_write_arbi.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/mem_write_arbi.v":1'
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v)]", 16, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v)]", 16, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/new/memory_control.v":22'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 6); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_clocks : clocks (clocks.v)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/clocks.v":3'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 7, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/top_resets.v":3'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst : syn_block (syn_block.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst : syn_block (syn_block.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst : syn_block (syn_block.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst : syn_block (syn_block.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst1 : syn_block (syn_block.v)]", 10, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), init_calib_complete_syn_inst1 : syn_block (syn_block.v)]", 10, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst1 : syn_block (syn_block.v)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_top_resets : top_resets (top_resets.v), mmcm_locked_syn_inst1 : syn_block (syn_block.v)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 12, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 12, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/image_capture.v":3'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v)]", 12); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v)]", 13, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/channel_capture.v":3'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), U0 : CMOS_OV5640RST (CMOS_OV5640RST.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/CMOS_CONFIG/CMOS_OV5640RST.v":4'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 15, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 15, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/compare/i2c_config_state.v":2'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 15); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 16, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 16, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_top.v":1'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v)]", 16); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v)]", 17, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v), i2c_master_top_m0 : i2c_master_top (i2c_master_top.v), byte_controller : i2c_master_byte_ctrl (i2c_master_byte_ctrl.v)]", 17, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master/i2c_master_byte_ctrl.v":75'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 18, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 18, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/lut_ov5640_rgb565_640_480.v":1'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), cmos_8_16bit_m0 : cmos_8_16bit (cmos_8_16bit.v)]", 19, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), cmos_8_16bit_m0 : cmos_8_16bit (cmos_8_16bit.v)]", 19, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/cmos_8_16bit.v":1'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), cmos_write_req_gen_m0 : cmos_write_req_gen (cmos_write_req_gen.v)]", 20, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), cmos_write_req_gen_m0 : cmos_write_req_gen (cmos_write_req_gen.v)]", 20, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/cmos_write_req_gen.v":2'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 21, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 21, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/frame_write.v":3'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 21); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v)]", 23, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v)]", 23, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/compare/frame_fifo_write_state.v":2'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v)]", 23); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v), write_req_syn_inst : syn_block (syn_block.v)]", 24, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel1_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v), frame_fifo_write_m0 : frame_fifo_write_state (frame_fifo_write_state.v), write_req_syn_inst : syn_block (syn_block.v)]", 24, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v)]", 25); // B (D, cp)
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/syn_block.v":17'
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), i2c_config_m0 : i2c_config_state (i2c_config_state.v)]", 27); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v)]", 25, true); // B (D, cp) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v)]", 25); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), mem_write_arbi_m0 : mem_write_arbi (mem_write_arbi.v)]", 26, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), mem_write_arbi_m0 : mem_write_arbi (mem_write_arbi.v)]", 26, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/mem_write_arbi.v":1'
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/mem_write_arbi.v":1'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v)]", 25); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 28, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), lut_ov5640_m0 : lut_ov5640_rgb565_640_480 (lut_ov5640_rgb565_640_480.v)]", 28, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/lut_ov5640_rgb565_640_480.v":1'
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 31); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 31, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_image_capture : image_capture (image_capture.v), channel2_capture : channel_capture (channel_capture.v), frame_write_m0 : frame_write (frame_write.v)]", 31, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/frame_write.v":3'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v)]", 35); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v)]", 35, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v)]", 35, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/new/memory_control.v":22'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v)]", 35); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v), u_aq_axi_master : AXI_MASTER (AXI_MASTER.v)]", 36, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_memory_control : memory_control (memory_control.v), u_aq_axi_master : AXI_MASTER (AXI_MASTER.v)]", 36, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/imports/new/AXI_MASTER.v":3'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v)]", 38, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v)]", 38, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/new/display_control.v":21'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v)]", 38); // B (D, cp)
+// [GUI Memory]: 125 MB (+59kb) [01:31:11]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), color_bar_m0 : color_bar (color_bar.v)]", 39, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), color_bar_m0 : color_bar (color_bar.v)]", 39, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/color_bar.v":2'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v)]", 40, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v)]", 40, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/video_rect_read_data.v":1'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v)]", 40); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v), timing_gen_xy_m0 : timing_gen_xy (timing_gen_xy.v)]", 41, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), video_rect_read_data_m0 : video_rect_read_data (video_rect_read_data.v), timing_gen_xy_m0 : timing_gen_xy (timing_gen_xy.v)]", 41, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/timing_gen_xy.v":1'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m0 : frame_read (frame_read.v)]", 44, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), frame_read_m0 : frame_read (frame_read.v)]", 44, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new/frame_read.v":21'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), mem_read_arbi_m0 : mem_read_arbi (mem_read_arbi.v)]", 49, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, dual_cam_display (dual_cam_display.v), inst_display_control : display_control (display_control.v), mem_read_arbi_m0 : mem_read_arbi (mem_read_arbi.v)]", 49, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files/Sublime Text 3/sublime_text.exe "D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1/mem_read_arbi.v":2'
+// Elapsed time: 20 seconds
+closeMainWindow("dual_cam_display_ov5640_k7 - [D:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.xpr] - Vivado 2018.3"); // cp
+// A (cp): Exit Vivado: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (A)
+dismissDialog("Exit Vivado"); // A (cp)

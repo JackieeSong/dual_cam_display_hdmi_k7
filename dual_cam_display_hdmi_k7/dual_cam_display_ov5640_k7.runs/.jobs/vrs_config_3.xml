@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="afifo_64i_16o_128_synth_1" LaunchDir="E:/education/no12/week12/dual_cam_display_ov5640_k7/dual_cam_display_ov5640_k7.runs/afifo_64i_16o_128_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

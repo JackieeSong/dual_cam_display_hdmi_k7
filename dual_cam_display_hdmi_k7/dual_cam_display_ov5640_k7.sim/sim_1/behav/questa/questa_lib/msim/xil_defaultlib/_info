@@ -1,0 +1,436 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA/week13/7.29/project/dual_cam_display/dual_cam_display_ov5640_k7.sim/sim_1/behav/questa
+vasym_bwe_bb
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 !s110 1695093767
+!i10b 1
+!s100 jKP^O4MkdM5Qi90BUaEHc0
+IdF8Md>6fNkIkSZ8ci[5TZ2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 xpm_memory_sv_unit
+S1
+R0
+Z5 w1544171246
+Z6 8D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+Z7 FD:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv
+L0 8013
+Z8 OL;L;10.4e;61
+r1
+!s85 0
+31
+Z9 !s108 1695093766.000000
+Z10 !s107 D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv|D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv|
+Z11 !s90 -64|-incr|-sv|-work|xil_defaultlib|+incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1|+incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master|+incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/ip/clk_200M|D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv|D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv|
+!i113 0
+Z12 o-sv -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 -sv -work xil_defaultlib +incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1 +incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master +incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/ip/clk_200M -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vglbl
+Z14 !s110 1695093769
+!i10b 1
+!s100 JWZ^meD<P7inSF0<1SiO32
+I`Mbk0oHiBm0dNc:a>md]<3
+R3
+R0
+w1573089660
+8glbl.v
+Fglbl.v
+L0 6
+R8
+r1
+!s85 0
+31
+Z15 !s108 1695093769.000000
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+Z16 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vI2C_sim_tb
+R14
+!i10b 1
+!s100 AV88oa[E=FHml2S3bgBdH2
+IjK]mPD`l@WnGIkSa@T1O43
+R3
+R0
+w1653447569
+8../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v
+F../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v
+L0 23
+R8
+r1
+!s85 0
+31
+R15
+!s107 ../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v|
+!s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1|+incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master|+incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/ip/clk_200M|../../../../dual_cam_display_ov5640_k7.srcs/sim_1/new/I2C_sim_tb.v|
+!i113 0
+R16
+!s92 -work xil_defaultlib +incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/imports/sources_1 +incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/imports/i2c_master +incdir+../../../../dual_cam_display_ov5640_k7.srcs/sources_1/ip/clk_200M -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@i2@c_sim_tb
+vxpm_cdc_array_single
+R1
+Z17 !s110 1695093766
+!i10b 1
+!s100 NO4kf<`<CI<OL`K^Ogi`40
+I85b?<6dBgoJPg0;HhDW0m0
+R3
+Z18 !s105 xpm_cdc_sv_unit
+S1
+R0
+R5
+Z19 8D:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv
+Z20 FD:/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv
+L0 903
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_cdc_async_rst
+R1
+R2
+!i10b 1
+!s100 6XSF2RZ?0A4N7;1XYP2P]3
+I4RDJBmBSfYU9025`M=]l_0
+R3
+R18
+S1
+R0
+R5
+R19
+R20
+L0 1171
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_cdc_gray
+R1
+R17
+!i10b 1
+!s100 c5:[hXPGkREE=om;h1PER2
+IR1mLHA7Va<W1@kE?b91zN3
+R3
+R18
+S1
+R0
+R5
+R19
+R20
+L0 284
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_cdc_handshake
+R1
+R17
+!i10b 1
+!s100 2nX[0D7bN@CTBzPhT6ZId2
+IG82KFNM:dQjOn2oC5AbFm1
+R3
+R18
+S1
+R0
+R5
+R19
+R20
+L0 469
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_cdc_low_latency_handshake
+R1
+R2
+!i10b 1
+!s100 NhBOoE:TQX>VL6iB^ZgWl0
+IoX?Y<JWTdQBcNgG[8SI8k2
+R3
+R18
+S1
+R0
+R5
+R19
+R20
+L0 1261
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_cdc_pulse
+R1
+R17
+!i10b 1
+!s100 =[IbJ?5ZSd_W^B7BUX1:S1
+IS3G]25@;6jDdm38W:Sm201
+R3
+R18
+S1
+R0
+R5
+R19
+R20
+L0 715
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_cdc_single
+R1
+R17
+!i10b 1
+!s100 ET1C2ZNLeac[<SbXI_oJ_0
+I;OHSBoUff8el;ka9fLWTW3
+R3
+R18
+S1
+R0
+R5
+R19
+R20
+L0 153
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_cdc_sync_rst
+R1
+R17
+!i10b 1
+!s100 :83?BM@_@GH?fgI;Q0<2G0
+IL8di9doFG:3mWL9Lj94MV3
+R3
+R18
+S1
+R0
+R5
+R19
+R20
+L0 1055
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_memory_base
+R1
+R2
+!i10b 1
+!s100 n8h4SHWBMN=2AXb2cg1dK1
+Ila62?zQL]:[kF<Q6`DcNQ3
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 57
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_memory_dpdistram
+R1
+R2
+!i10b 1
+!s100 ?AHecN7ghiRW_oekfFUJ>1
+InQc`l@X]ZB`OYWDaEAVXT0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 8072
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_memory_dprom
+R1
+R2
+!i10b 1
+!s100 g^<ecJkdiY:M5EA<]U3eU1
+Im;1SLYE5nQ]0JB_^5Ac5:0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 8210
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_memory_sdpram
+R1
+R2
+!i10b 1
+!s100 ;=k0bM8IHj>WoPUeC`2c_3
+IecE7[SaHofFCK5ogPT>hR1
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 8368
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_memory_spram
+R1
+R2
+!i10b 1
+!s100 9YoB265`D2jP9mjfQHQgE0
+I0^Pgd[;M]85lmDnbFFjd32
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 8527
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_memory_sprom
+R1
+R2
+!i10b 1
+!s100 I`NENEgSSQhVF>A?V`@MD3
+I^=eEinGdAKWdoaL7mQKo01
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 8675
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+vxpm_memory_tdpram
+R1
+R2
+!i10b 1
+!s100 iHOKhEH3_l7gQ4gb<Md=K2
+I2d61=]_m?1E=?kdk[f1<10
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 8813
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13

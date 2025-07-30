@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/education/no12/week12/dual_cam_display_ov5640_k7/dual_cam_display_ov5640_k7.srcs/sources_1/imports/new
+vclocks
+!s110 1654324073
+!i10b 1
+!s100 [n3W;1BE0kJT@IF9B8^CN3
+I6mX4;0he@E`NCnYU_HF1X3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1654324073
+8c:\users\wolf\appdata\local\temp\tmpwyqs5c.v
+Fc:\users\wolf\appdata\local\temp\tmpwyqs5c.v
+L0 13
+Z2 OL;L;10.7c;67
+r1
+!s85 0
+31
+!s108 1654324073.000000
+!s107 c:\users\wolf\appdata\local\temp\tmpwyqs5c.v|
+!s90 c:\users\wolf\appdata\local\temp\tmpwyqs5c.v|
+!i113 0
+Z3 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 tCvgOpt 0
+vimage_capture
+!s110 1659700857
+!i10b 1
+!s100 >T5g`deY>D<7aW4iZ;DkP0
+IlZmAh2YAR9`o7JUYDb:653
+R1
+R0
+w1659700856
+8c:\users\wolf\appdata\local\temp\tmpg1w97a.v
+Fc:\users\wolf\appdata\local\temp\tmpg1w97a.v
+L0 23
+R2
+r1
+!s85 0
+31
+!s108 1659700857.000000
+!s107 c:\users\wolf\appdata\local\temp\tmpg1w97a.v|
+!s90 c:\users\wolf\appdata\local\temp\tmpg1w97a.v|
+!i113 0
+R3
+R4
+vtop_resets
+!s110 1654391593
+!i10b 1
+!s100 jM61go1Ul=4TFoIcZm^fK3
+I0DJ4[bniZJ@UI_lWE7YO:0
+R1
+R0
+w1654391593
+8c:\users\wolf\appdata\local\temp\tmpxuyo4m.v
+Fc:\users\wolf\appdata\local\temp\tmpxuyo4m.v
+L0 14
+R2
+r1
+!s85 0
+31
+!s108 1654391593.000000
+!s107 c:\users\wolf\appdata\local\temp\tmpxuyo4m.v|
+!s90 c:\users\wolf\appdata\local\temp\tmpxuyo4m.v|
+!i113 0
+R3
+R4
